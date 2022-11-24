@@ -2,6 +2,12 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: opsmx-provider-config
+spec:
+  args:
+    - name: start-time
+    - name: end-time
+    - name: canary-hash
+    - name: baseline-hash
 data:
   providerConfig: |
     gateUrl: https://isd-argofull.isd-dev.opsmx.net/
