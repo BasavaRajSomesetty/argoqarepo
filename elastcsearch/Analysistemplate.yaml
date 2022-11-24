@@ -27,3 +27,4 @@ spec:
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-ret-1"
             canaryLogScope: "canaryapp-rest-1"
+            logTemplateVersion: "v2.0"
