@@ -4,20 +4,21 @@ metadata:
   name: opsmx-provider-config
 data:
   providerConfig: |
-    application: jobtest
+    gateUrl: https://isd-argofull.isd-dev.opsmx.net/
+    application: newreliclive
     user: admin
-    gateUrl: 'https://isd-argofull.isd-dev.opsmx.net/'
-    lifetimeMinutes: 3
-    intervalTime: 3
-    lookBackType: sliding
-    gitops: false
-    passScore: 90
-    serviceList:
-    - metricScopeVariables: "${app_key},${host_key}"
+    baselineStartTime: "{{args.start-time}}"
+    canaryStartTime: "{{args.start-time}}"
+    endTime: "{{args.end-time}}"
+    threshold:
+      pass: 80
+      marginal: 60
+    services:
+    - metricTemplateName: newrelic-validator1
+      metricTemplateVersion: "v2.0"
+      metricScopeVariables: "${app_key},${host_key}"
       baselineMetricScope: "issuegen-exp-ss1-app1,nr-isd-exp-ss1-baseline.*"
       canaryMetricScope: "issuegen-exp-ss1-app2,nr-isd-exp-ss1-canary.*"
-      metricTemplateName: "New-relic-validator-temp-working"
-      metricTemplateVersion: "v3.0"
     - logTemplateName: newstack
       logScopeVariables: "resource.labels.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
