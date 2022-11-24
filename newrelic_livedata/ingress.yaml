@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/app-root: /
 spec:
   rules:
-  - host: issuegen-exp-app1.autopilot.opsmx.com
+  - host: issuegen-exp-newrelic1.aoa.oes.opsmx.org
     http:
       paths:
       - path: /
@@ -30,7 +30,7 @@ metadata:
     ingress.kubernetes.io/app-root: /
 spec:
   rules:
-  - host: issuegen-exp-app2.autopilot.opsmx.com
+  - host: issuegen-exp-newrelic2.aoa.oes.opsmx.org
     http:
       paths:
       - path: /
