@@ -4,21 +4,16 @@ metadata:
   name: opsmx-provider-config2
 data:
   providerConfig: |
-    application: testanalysis
+    application: testanalysis12
     user: admin
     gateUrl: 'https://isd-argofull.isd-dev.opsmx.net/'
     lifetimeMinutes: 3
     intervalTime: 3
     lookBackType: sliding
-    gitops: true
+    gitops: false
     passScore: 90
     serviceList:
-    - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
-      baselineMetricScope: "argocd-gitpr,{{env.STABLE_POD_HASH}},testanalysis1"
-      canaryMetricScope: "argocd-gitpr,{{env.LATEST_POD_HASH}},testanalysis1"
-      metricTemplateName: "metrixtemplates"
-    - logTemplateName: Elk
-      logScopeVariables: "kubernetes.pod_name"
-      baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
-      canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v5.0"
+    - logTemplateName: splunktemp2
+            logScopeVariables: "kubernetes.container_name"
+            baselineLogScope: "oes-platform-br"
+            canaryLogScope: "oes-platform-cr"
