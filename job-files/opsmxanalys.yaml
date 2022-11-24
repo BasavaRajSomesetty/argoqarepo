@@ -17,7 +17,7 @@ data:
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},junaid-on-job"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},junaid-on-job"
       metricTemplateName: "newprom"
-      metricTemplateVersion: "v1.0"
+      metricTemplateVersion: "v2.0"
     - logTemplateName: Elk
       logScopeVariables: "kubernetes.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
