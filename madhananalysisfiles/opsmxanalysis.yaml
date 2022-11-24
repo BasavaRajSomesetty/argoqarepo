@@ -11,7 +11,7 @@ data:
     intervalTime: 3
     lookBackType: sliding
     gitops: false
-    passScore: 90
+    passScore: 30
     serviceList:
     - logTemplateName: splunktemp2
             logScopeVariables: "kubernetes.container_name"
