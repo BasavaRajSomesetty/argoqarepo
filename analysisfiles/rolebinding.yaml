@@ -29,11 +29,11 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: job-acc1
-  namespace: isd-argocdfull 
+  namespace: isd-argofull 
 subjects:
   - kind: ServiceAccount
     name: job-acc1
-    namespace: isd-argocdfull 
+    namespace: isd-argofull 
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
