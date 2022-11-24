@@ -16,7 +16,7 @@ data:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_key}"
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},issugen-baseline"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},issugen-baseline"
-      metricTemplateName: "newrelic-validator"
+      metricTemplateName: "New-relic-validator-temp"
       metricTemplateVersion: "v3.0"
     - logTemplateName: newstack
       logScopeVariables: "resource.labels.pod_name"
