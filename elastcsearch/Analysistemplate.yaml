@@ -25,6 +25,6 @@ spec:
           services:
           - logTemplateName: elasticlogtemp1
             logScopeVariables: "kubernetes.container_name"
-            baselineLogScope: "baseapp-ret-1"
+            baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
             logTemplateVersion: "v3.0"
