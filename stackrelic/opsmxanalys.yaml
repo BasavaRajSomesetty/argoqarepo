@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opsmx-provider-config
+data:
+  providerConfig: |
+    application: jobtest
+    user: admin
+    gateUrl: 'https://isd-argofull.isd-dev.opsmx.net/'
+    lifetimeMinutes: 3
+    intervalTime: 3
+    lookBackType: sliding
+    gitops: false
+    passScore: 90
+    serviceList:
+    - metricScopeVariables: "${app_key},${host_key}"
+      baselineMetricScope: "issuegen-exp-ss1-app1,nr-isd-exp-ss1-baseline.*"
+      canaryMetricScope: "issuegen-exp-ss1-app2,nr-isd-exp-ss1-canary.*"
+      metricTemplateName: "New-relic-validator-temp-working"
+      metricTemplateVersion: "v3.0"
+    - logTemplateName: newstack
+      logScopeVariables: "resource.labels.pod_name"
+      baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
+      canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
+      logTemplateVersion: "v1.0"
