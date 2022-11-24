@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: metrixtemplates1
+  name: metrixtemplates2
 data:
   metrixtemplates: |
     {
