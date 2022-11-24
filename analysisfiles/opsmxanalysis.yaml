@@ -17,8 +17,8 @@ data:
       baselineMetricScope: "argocd-gitpr,{{env.STABLE_POD_HASH}},testanalysis1"
       canaryMetricScope: "argocd-gitpr,{{env.LATEST_POD_HASH}},testanalysis1"
       metricTemplateName: "metrixtemplates"
-    - logTemplateName: testlog1123
+    - logTemplateName: Elk
       logScopeVariables: "kubernetes.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v1.0"
+      logTemplateVersion: "v5.0"
