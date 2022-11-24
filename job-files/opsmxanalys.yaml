@@ -15,7 +15,7 @@ data:
     serviceList:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_key}"
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},issugen-baseline"
-      canaryMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},issugen-baseline"
+      canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},issugen-baseline"
       metricTemplateName: "New-relic-validator-temp-working"
       metricTemplateVersion: "v3.0"
     - logTemplateName: newstack
