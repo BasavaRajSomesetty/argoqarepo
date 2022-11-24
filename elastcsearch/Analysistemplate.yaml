@@ -13,7 +13,7 @@ spec:
         opsmx:
           profile: opsmx-profile
           gateUrl: https://isd-argofull.isd-dev.opsmx.net/
-          application: elasticqa1
+          application: elasticqa11
           baselineStartTime: "2021-11-03T11:29:46.915Z"
           canaryStartTime: "2021-11-03T11:20:47.916Z"
           user: user2
