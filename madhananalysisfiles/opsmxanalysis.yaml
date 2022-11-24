@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: opsmx-provider-config2
+  name: opsmx-provider-config3
 data:
   providerConfig: |
     application: testanalysis12
