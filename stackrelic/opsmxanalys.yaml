@@ -5,7 +5,7 @@ metadata:
 data:
   providerConfig: |
     gateUrl: https://isd-argofull.isd-dev.opsmx.net/
-    application: newreliclive
+    application: stackrelic
     user: admin
     baselineStartTime: "{{args.start-time}}"
     canaryStartTime: "{{args.start-time}}"
