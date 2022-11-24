@@ -18,8 +18,8 @@ data:
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},junaid-on-job"
       metricTemplateName: "newrelic"
       metricTemplateVersion: "v2.0"
-    - logTemplateName: stackdriver
+    - logTemplateName: newstack
       logScopeVariables: "resource.labels.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v3.0"
+      logTemplateVersion: "v1.0"
