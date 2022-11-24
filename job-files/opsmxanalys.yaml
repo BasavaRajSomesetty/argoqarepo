@@ -19,7 +19,7 @@ data:
       metricTemplateName: "newrelic"
       metricTemplateVersion: "v2.0"
     - logTemplateName: stackdriver
-      logScopeVariables: "kubernetes.pod_name"
+      logScopeVariables: "resource.labels.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v2.0"
+      logTemplateVersion: "v3.0"
