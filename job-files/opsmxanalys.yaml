@@ -6,7 +6,7 @@ data:
   providerConfig: |
     application: testapp
     user: admin
-    gateUrl: 'https://osi-isd.isd-qa.opsmx.net/'
+    gateUrl: 'https://helm411-isd.isd-dev.opsmx.net/'
     lifetimeMinutes: 3
     intervalTime: 3
     lookBackType: sliding
@@ -22,4 +22,4 @@ data:
       logScopeVariables: "resource.labels.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v3.0"
+      logTemplateVersion: "v1.0"
