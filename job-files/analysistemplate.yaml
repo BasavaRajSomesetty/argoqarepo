@@ -14,7 +14,7 @@ spec:
             backoffLimit: 2
             template:
               spec:
-                serviceAccountName: opsmx-provider-account-osi-isd
+                serviceAccountName: opsmx-provider-account-helm411
                 imagePullSecrets:
                 - name: opsmx11-secret
                 containers:
