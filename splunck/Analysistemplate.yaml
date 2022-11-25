@@ -16,7 +16,7 @@ spec:
           lifetimeMinutes: 6
           gitops: true
           threshold: 
-            pass: 30
+            pass: 40
             marginal: 20
           services:
           - logTemplateName:  logtemplatetest11
