@@ -4,7 +4,7 @@ metadata:
   name: opsmx-provider-config
 data:
   providerConfig: |
-    application: testjob
+    application: testapp
     user: admin
     gateUrl: 'https://osi-isd.isd-qa.opsmx.net/'
     lifetimeMinutes: 3
