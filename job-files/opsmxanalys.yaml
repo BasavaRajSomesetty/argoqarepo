@@ -16,9 +16,9 @@ data:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_key}"
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},issugen-baseline"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},issugen-baseline"
-      metricTemplateName: "relicworking2"
+      metricTemplateName: "newrelic"
       metricTemplateVersion: "v1.0"
-    - logTemplateName: newstack
+    - logTemplateName: qatestacxaa
       logScopeVariables: "resource.labels.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
