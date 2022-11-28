@@ -13,8 +13,8 @@ spec:
       provider:
         opsmx:
           profile: opsmx-profile
-          gateUrl: https://oes-argoqa.isd-dev.opsmx.net/
-          application: stackdriver1
+          gateUrl: https://isd-argocd.isd-dev.opsmx.net/
+          application: stackdriverlive1
           user: admin
           lifetimeMinutes: 6
           intervalTime: 3
@@ -28,6 +28,6 @@ spec:
           - metricScopeVariables: "app_key,pod_key"
             baselineMetricScope: "issugen-baseline,{{args.baseline-hash}}"
             canaryMetricScope: "issugen-baseline,{{args.canary-hash}}"
-          - logScopeVariables: "kubernetes.pod_name"
+          - logScopeVariables: "resource.labels.pod_name"
             baselineLogScope: ".*{{args.baseline-hash}}.*"
             canaryLogScope: ".*{{args.canary-hash}}.*"
