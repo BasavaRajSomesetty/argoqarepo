@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opsmx-provider-config
+data:
+  providerConfig: |
+    application: testapp
+    user: admin
+    gateUrl: 'https://helm411-isd.isd-dev.opsmx.net/'
+    lifetimeMinutes: 3
+    intervalTime: 3
+    lookBackType: sliding
+    gitops: false
+    passScore: 90
+    serviceList:
+    - metricScopeVariables: "${namespace_key},${pod_key},${app_key}"
+      baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},issugen-baseline"
+      canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},issugen-baseline"
+      metricTemplateName: "newrelic"
+      metricTemplateVersion: "v1.0"
+    - logTemplateName: qatestacxaa
+      logScopeVariables: "resource.labels.pod_name"
+      baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
+      canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
+      logTemplateVersion: "v1.0"
