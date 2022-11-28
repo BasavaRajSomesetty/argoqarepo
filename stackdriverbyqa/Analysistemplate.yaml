@@ -22,8 +22,6 @@ spec:
           threshold:
             pass: 80
             marginal: 60
-          globalMetricTemplate: newreliccustom
-          globalLogTemplate: teststack1
           services:
           - metricTemplateName: newrelic-validator1
             metricScopeVariables: "${app_key},${pod_key}"
