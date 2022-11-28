@@ -15,6 +15,6 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: issuegensd
+            name: stack-ss1-app-svc
             port:
               number: 8088
