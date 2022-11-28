@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: issuegensd
+  name: stack-ss1-app-svc
 spec:
   replicas: 4
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: issuegensd
+      app: stack-ss1-app-svc
   template:
     metadata:
       annotations:
