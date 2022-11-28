@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: opsmx-provider-account-osi-isd 
+  name: job-acc 
 ---
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
@@ -28,8 +28,8 @@ rules:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: opsmx-provider-account-osi-isd
-  namespace: isd-argofull
+  name: job-acc
+  namespace: isd-argofull 
 subjects:
   - kind: ServiceAccount
     name: job-acc
