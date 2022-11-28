@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: junaid-on-job
+spec:
+  selector:
+    app: junaid-on-job
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8088
