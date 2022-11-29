@@ -46,6 +46,9 @@ spec:
                 - name: metric-config-volume
                   configMap:
                     name: metrixtemplates2
+                - name: log-config-volume
+                  configMap:
+                    name: logtemplate11
                 - name: secret-config-volume
                   secret:
                     secretName: opsmx-profile
