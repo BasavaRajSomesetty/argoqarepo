@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: junaid-on-job
+  name: rollout-job1
 spec:
   selector:
-    app: junaid-on-job
+    app: rollout-job1
   ports:
   - protocol: TCP
     port: 80
