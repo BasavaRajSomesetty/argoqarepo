@@ -15,7 +15,7 @@ spec:
         prometheus_io_path: /mgmt/prometheus
         prometheus_io_port: '8088'
       labels:
-        app: job1
+        app: rollout-job1
     spec:
       containers:
         - name: rollouts-baseline
