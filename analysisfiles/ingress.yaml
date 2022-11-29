@@ -8,13 +8,13 @@ metadata:
     ingress.kubernetes.io/app-root: /
 spec:
   rules:
-  - host: issugens-raju12345.aoa.oes.opsmx.org
+  - host: issugens-jobfile.aoa.oes.opsmx.org
     http:
       paths:
       - path: /
         pathType: ImplementationSpecific
         backend:
           service:
-            name: junaid-on-job
+            name: rollout-job1
             port:
               number: 8088
