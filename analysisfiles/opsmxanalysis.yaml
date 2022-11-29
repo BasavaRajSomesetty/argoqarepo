@@ -14,8 +14,8 @@ data:
     passScore: 90
     serviceList:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
-      baselineMetricScope: "argocd-gitpr,{{env.STABLE_POD_HASH}},testanalysis1"
-      canaryMetricScope: "argocd-gitpr,{{env.LATEST_POD_HASH}},testanalysis1"
+      baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},testanalysis"
+      canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},testanalysis"
       metricTemplateName: "metrixtemplates"
     - logTemplateName: logtemplate11
       logScopeVariables: "kubernetes.pod_name"
