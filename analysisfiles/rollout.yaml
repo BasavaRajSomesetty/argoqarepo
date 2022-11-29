@@ -6,7 +6,7 @@ spec:
   replicas: 4
   selector:
     matchLabels:
-      app: job1
+      app: rollout-job1
   revisionHistoryLimit: 2
   template:
     metadata:
