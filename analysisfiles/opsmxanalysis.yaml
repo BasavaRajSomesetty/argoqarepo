@@ -4,7 +4,7 @@ metadata:
   name: opsmx-provider-config2
 data:
   providerConfig: |
-    application: testanalysis
+    application: jobappwithgitops
     user: admin
     gateUrl: https://isd-argocd.isd-dev.opsmx.net/
     lifetimeMinutes: 3
