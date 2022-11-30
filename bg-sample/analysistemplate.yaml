@@ -8,7 +8,7 @@ spec:
     - name: baseline-hash
   metrics:
     - name: metric-analysis-411
-      initialDelay: 120s
+      initialDelay: 10s
       provider:
         job:
           spec:
