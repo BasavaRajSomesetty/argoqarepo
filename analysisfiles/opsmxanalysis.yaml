@@ -10,14 +10,14 @@ data:
     lifetimeMinutes: 3
     intervalTime: 3
     lookBackType: sliding
-    gitops: true
+    gitops: false
     passScore: 90
     serviceList:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},testanalysis"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},testanalysis"
       metricTemplateName: "metrixtemplates"
-    - logTemplateName: logtemplate11
+    - logTemplateName: newlog1
       logScopeVariables: "kubernetes.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
