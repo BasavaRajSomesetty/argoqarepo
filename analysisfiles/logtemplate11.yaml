@@ -7,7 +7,6 @@ data:
      {
       "templateName": "logtemplate11",
       "monitoringProvider": "ELASTICSEARCH",
-      "scoringAlgorithm": "",
       "accountName": "Elasticsearch",
       "index": "newibmpspin-*",
       "namespace": null,
