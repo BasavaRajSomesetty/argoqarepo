@@ -9,7 +9,7 @@ data:
       "monitoringProvider": "ELASTICSEARCH",
       "scoringAlgorithm": "Canary",
       "accountName": "Elasticsearch",
-      "index": "test-*",
+      "index": "newibmpspin-*",
       "namespace": null,
       "regExFilter": false,
       "regExResponseKey": "",
