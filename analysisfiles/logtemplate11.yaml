@@ -12,7 +12,7 @@ data:
       "index": "newibmpspin-*",
       "namespace": null,
       "regExFilter": false,
-      "regExResponseKey": "",
+      "regExResponseKey": "log,message",
       "regularExpression": "",
       "filterKey": "kubernetes.pod_name",
       "autoBaseline": false,
