@@ -14,7 +14,7 @@ data:
       "regExFilter": false,
       "regExResponseKey": "",
       "regularExpression": "",
-      "filterKey": "kubernetes.container_name",
+      "filterKey": "kubernetes.pod_name",
       "autoBaseline": false,
       "sensitivity": "high",
       "tags": [],
