@@ -33,9 +33,14 @@ spec:
                     - name: secret-config-volume
                       mountPath: /etc/config/secrets
                       readOnly: true
+                    - name: provider-config-volume
+                      mountPath: /etc/config/provider
                 restartPolicy: Never
                 volumes:
                 - name: secret-config-volume
                   secret:
                     secretName: opsmx-profile
                     optional: false
+                - name: provider-config-volume
+                  configMap:
+                    name: nginx-analysis
