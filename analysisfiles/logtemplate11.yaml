@@ -8,7 +8,7 @@ data:
       "templateName": "logtemplate11",
       "monitoringProvider": "ELASTICSEARCH",
       "scoringAlgorithm": "Canary",
-      "accountName": "testelastic",
+      "accountName": "Elasticsearch",
       "index": "test-*",
       "namespace": null,
       "regExFilter": false,
