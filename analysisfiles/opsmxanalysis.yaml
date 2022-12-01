@@ -15,7 +15,7 @@ data:
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},testanalysis"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},testanalysis"
       metricTemplateName: "metrixtemplates"
-    - logTemplateName: logtemplate11
+    - logTemplateName: logtemplate11qaqaqa
       logScopeVariables: "kubernetes.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
