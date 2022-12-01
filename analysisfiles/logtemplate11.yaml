@@ -7,7 +7,7 @@ data:
      {
       "templateName": "logtemplate11",
       "monitoringProvider": "ELASTICSEARCH",
-      "accountName": "Elasticsearch",
+      "accountName": "Elasticsearchxxx",
       "index": "newibmpspin-*",
       "namespace": null,
       "regExFilter": false,
