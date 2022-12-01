@@ -5,7 +5,7 @@ metadata:
 data:
   logtemplate11: |
      {
-      "templateName": "logtemplate11xxxxx",
+      "templateName": "logtemplate11",
       "monitoringProvider": "ELASTICSEARCH",
       "accountName": "Elasticsearch",
       "index": "newibmpspin-*",
