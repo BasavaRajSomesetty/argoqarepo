@@ -25,6 +25,6 @@ data:
       }
     ]
     },
-    "templateName": "metrixtemplates",
+    "templateName": "",
     "advancedProvider": "PROMETHEUS"
     }
