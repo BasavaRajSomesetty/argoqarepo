@@ -15,8 +15,13 @@ data:
     gitops: false
     passScore: 90
     serviceList:
-    - metricTemplateName: newrelic
-      metricScopeVariables: "app_key,pod_key"
-      baselineMetricScope: "issugen-baseline,6944b5c7df"
-      canaryMetricScope: "issugen-baseline,76f78f85ff"
-    
+    - metricScopeVariables: "${namespace_key},${pod_key},${app_key}"
+      baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},issugen-baseline"
+      canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},issugen-baseline"
+      metricTemplateName: "newrelic"
+      metricTemplateVersion: "v1.0"
+    - logTemplateName: newstack
+      logScopeVariables: "resource.labels.pod_name"
+      baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
+      canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
+      logTemplateVersion: "v1.0"
