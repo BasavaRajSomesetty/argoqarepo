@@ -4,10 +4,10 @@ metadata:
   name: opsmx-provider-config
 data:
   providerConfig: |
-    application: testappqa1
-    user: admin
-    gateUrl: https://isd-argocd.isd-dev.opsmx.net/
-    lifetimeMinutes: 3
+    application: reclassification-app
+    baselineStartTime: "2021-11-03T11:29:46.915Z"
+    canaryStartTime: "2021-11-03T11:29:46.915Z"
+    lifetimeMinutes: 6
     intervalTime: 3
     lookBackType: sliding
     gitops: false
@@ -16,10 +16,8 @@ data:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_key}"
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},issugen-baseline"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},issugen-baseline"
-      metricTemplateName: "newrelic"
-      metricTemplateVersion: "v1.0"
-    - logTemplateName: newstack
-      logScopeVariables: "resource.labels.pod_name"
-      baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
-      canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v1.0"
+      metricTemplateName: "newrelic-validator1"
+    - logTemplateName: reclassificationtemp
+      logScopeVariables: "kubernetes.container_name"
+      baselineLogScope: "baseapp-rest-1"
+      canaryLogScope: "canaryapp-rest-1"
